@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/colorAccent" />
+    <!--width 描边的宽度-->
+    <!---->
+    <!--dashWidth 组成虚线的线段的宽度-->
+    <!--dashGap 组成虚线的线段之间的间隔-->
+    <stroke
+        android:width="5dp"
+        android:color="@color/red"
+        android:dashWidth="20dp"
+        android:dashGap="10dp" />
+</shape>

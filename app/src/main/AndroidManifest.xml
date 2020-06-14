@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="BitmapDrawableActivity"
-            android:name=".activity.BitmapDrawableActivity" />
+            android:name=".activity.ShapeDrawableActivity"
+            android:label="ShapeDrawable" />
+        <activity
+            android:name=".activity.NinePatchDrawableActivity"
+            android:label="NinePatchDrawableActivity" />
+        <activity
+            android:name=".activity.BitmapDrawableActivity"
+            android:label="BitmapDrawableActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

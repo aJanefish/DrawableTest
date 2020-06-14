@@ -58,7 +58,10 @@ public class DrawableTestAdapter extends RecyclerView.Adapter<DrawableTestAdapte
             Drawable drawable = itemView.getContext().getResources().getDrawable(bean.testId);
             //imageView1.setImageDrawable(drawable);
             imageView1.setBackground(drawable);
-            textView1.setText(bean.des + "\n[" + imageView1.getWidth() + "," + imageView1.getHeight() + "]");
+            textView1.setText(drawable.getClass().getSimpleName() + "\n" + bean.des +
+                    "\n[" + imageView1.getWidth() + "," + imageView1.getHeight() + "]" +
+                    "\n[" + drawable.getIntrinsicWidth() + "," + drawable.getIntrinsicHeight() + "]" +
+                    "");
         }
 
     }

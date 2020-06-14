@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:filter="true"
+    android:src="@drawable/ycy">
+    <!-- android:src 资源id-->
+    <!-- android:antialias 是否开启图片抗锯齿功能   -->
+    <!-- android:dither 是否开启抖动效果  -->
+    <!-- android:filter 是否开启过滤功能   -->
+    <!-- android:gravity 当图片小于容器的尺寸时，设置此选项可以对图片进行定位   -->
+    <!-- android:tileMode 平铺模式-->
+</bitmap>

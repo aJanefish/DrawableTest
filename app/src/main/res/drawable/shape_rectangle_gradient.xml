@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--    <solid android:color="@color/colorAccent" />-->
+    <!-- 与solid互斥   -->
+    <!--  angle渐变角度，默认为0  -->
+    <!--  centerX  渐变中心横坐标-->
+    <!--  centerY  渐变中纵坐标，渐变中心会影响渐变的具体效果-->
+    <!--  startColor  渐变中心竖坐标-->
+    <!--  centerColor  渐变中心竖坐标-->
+    <!--  endColor  渐变中心竖坐标-->
+    <gradient
+        android:angle="0"
+        android:centerColor="@color/colorPrimaryDark"
+        android:centerX="300"
+        android:centerY="300"
+        android:endColor="@color/colorAccent"
+        android:gradientRadius="100dp"
+        android:startColor="@color/colorPrimary"
+        android:type="sweep" />
+
+    <!--    <stroke-->
+    <!--        android:width="2dp"-->
+    <!--        android:color="@color/colorPrimary"-->
+    <!--        android:dashWidth="10dp"-->
+    <!--        android:dashGap="2dp" />-->
+</shape>

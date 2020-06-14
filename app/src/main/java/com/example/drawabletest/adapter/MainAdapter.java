@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.drawabletest.R;
 import com.example.drawabletest.activity.BitmapDrawableActivity;
+import com.example.drawabletest.activity.NinePatchDrawableActivity;
+import com.example.drawabletest.activity.ShapeDrawableActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,8 +23,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainHolder> {
 
     public MainAdapter() {
         mList.add(new MainBean("BitmapDrawable", BitmapDrawableActivity.class));
-        mList.add(new MainBean("BitmapDrawable", BitmapDrawableActivity.class));
-        mList.add(new MainBean("BitmapDrawable", BitmapDrawableActivity.class));
+        mList.add(new MainBean("NinePatchDrawable", NinePatchDrawableActivity.class));
+        mList.add(new MainBean("ShapeDrawable", ShapeDrawableActivity.class));
         mList.add(new MainBean("BitmapDrawable", BitmapDrawableActivity.class));
         mList.add(new MainBean("BitmapDrawable", BitmapDrawableActivity.class));
     }
