@@ -36,14 +36,20 @@ public class ShapeDrawableActivity extends AppCompatActivity {
         mList.add(new DrawableTestAdapter.Bean("矩形(rectangle)", R.drawable.shape_rectangle_common));
         mList.add(new DrawableTestAdapter.Bean("矩形-带圆角-四个圆角相同", R.drawable.shape_rectangle_corners));
         mList.add(new DrawableTestAdapter.Bean("矩形-带圆角-四个圆角不同相同", R.drawable.shape_rectangle_corners_diff));
-        mList.add(new DrawableTestAdapter.Bean("矩形-颜色渐变", R.drawable.shape_rectangle_gradient));
+        mList.add(new DrawableTestAdapter.Bean("矩形-带圆角-四个圆角不同相同", R.drawable.shape_rectangle_corners_diff_1));
+        mList.add(new DrawableTestAdapter.Bean("矩形-渐变", R.drawable.shape_rectangle_gradient));
+        mList.add(new DrawableTestAdapter.Bean("矩形-渐变-中间色", R.drawable.shape_rectangle_gradient_center_color));
         mList.add(new DrawableTestAdapter.Bean("矩形-描边", R.drawable.shape_rectangle_stroke));
         mList.add(new DrawableTestAdapter.Bean("矩形-空白", R.drawable.shape_rectangle_padding));
         mList.add(new DrawableTestAdapter.Bean("矩形-大小", R.drawable.shape_rectangle_size));
 
         mList.add(new DrawableTestAdapter.Bean("椭圆(oval)", R.drawable.shape_oval_common));
+        mList.add(new DrawableTestAdapter.Bean("椭圆 - 圆环", R.drawable.shape_oval_ring));
+        mList.add(new DrawableTestAdapter.Bean("椭圆 - 园", R.drawable.shape_oval_ring));
 
         mList.add(new DrawableTestAdapter.Bean("横线(line)", R.drawable.shape_line_common));
+
+        mList.add(new DrawableTestAdapter.Bean("圆环(ring)", R.drawable.shape_ring_common));
         mList.add(new DrawableTestAdapter.Bean("圆环(ring)", R.drawable.shape_ring_common));
     }
 }
