@@ -1,6 +1,8 @@
 package com.example.drawabletest.adapter;
 
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.ScaleDrawable;
+import android.graphics.drawable.TransitionDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,10 +56,33 @@ public class DrawableTestAdapter extends RecyclerView.Adapter<DrawableTestAdapte
 
         public void onBind(Bean bean) {
             mBean = bean;
-
+            imageView1.setBackground(null);
+            imageView1.setImageDrawable(null);
             Drawable drawable = itemView.getContext().getResources().getDrawable(bean.testId);
-            //imageView1.setImageDrawable(drawable);
-            imageView1.setBackground(drawable);
+            if (drawable instanceof TransitionDrawable) {
+                if (bean.type == 0) {
+                    imageView1.setBackground(drawable);
+                    ((TransitionDrawable) drawable).startTransition(1000);
+                } else if (bean.type == 1) {
+                    imageView1.setImageDrawable(drawable);
+                    ((TransitionDrawable) drawable).startTransition(1000);
+                }
+            } else if (drawable instanceof ScaleDrawable) {
+                if (bean.type == 0) {
+                    imageView1.setBackground(drawable);
+                } else if (bean.type == 1) {
+                    imageView1.setImageDrawable(drawable);
+                }
+                ((ScaleDrawable) drawable).setLevel(1);
+            } else {
+                if (bean.type == 0) {
+                    drawable.setLevel(bean.level);
+                    imageView1.setBackground(drawable);
+                } else if (bean.type == 1) {
+                    imageView1.setImageDrawable(drawable);
+                    imageView1.setImageLevel(bean.level);
+                }
+            }
             textView1.setText(drawable.getClass().getSimpleName() + "\n" + bean.des +
                     "\n[" + imageView1.getWidth() + "," + imageView1.getHeight() + "]" +
                     "\n[" + drawable.getIntrinsicWidth() + "," + drawable.getIntrinsicHeight() + "]" +
@@ -69,10 +94,25 @@ public class DrawableTestAdapter extends RecyclerView.Adapter<DrawableTestAdapte
     public static class Bean {
         private String des;
         int testId;
+        int type = 0;
+        int level;
 
         public Bean(String des, int testId) {
             this.des = des;
             this.testId = testId;
+        }
+
+        public Bean(String des, int testId, int type) {
+            this.des = des;
+            this.testId = testId;
+            this.type = type;
+        }
+
+        public Bean(String des, int testId, int type, int level) {
+            this.des = des;
+            this.testId = testId;
+            this.type = type;
+            this.level = level;
         }
     }
 

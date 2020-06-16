@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.ClipDrawableActivity"></activity>
+        <activity android:name=".activity.ScaleDrawableActivity" />
+        <activity android:name=".activity.InsetDrawableActivity" />
+        <activity android:name=".activity.TransitionDrawableActivity" />
+        <activity android:name=".activity.LevelListDrawableActivity" />
+        <activity android:name=".activity.StateListDrawableActivity" />
+        <activity android:name=".activity.LayerDrawableActivity" />
         <activity
             android:name=".activity.ShapeDrawableActivity"
             android:label="ShapeDrawable" />

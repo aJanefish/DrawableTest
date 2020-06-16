@@ -11,8 +11,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.drawabletest.R;
 import com.example.drawabletest.activity.BitmapDrawableActivity;
+import com.example.drawabletest.activity.ClipDrawableActivity;
+import com.example.drawabletest.activity.InsetDrawableActivity;
+import com.example.drawabletest.activity.LayerDrawableActivity;
+import com.example.drawabletest.activity.LevelListDrawableActivity;
 import com.example.drawabletest.activity.NinePatchDrawableActivity;
+import com.example.drawabletest.activity.ScaleDrawableActivity;
 import com.example.drawabletest.activity.ShapeDrawableActivity;
+import com.example.drawabletest.activity.StateListDrawableActivity;
+import com.example.drawabletest.activity.TransitionDrawableActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,8 +32,13 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainHolder> {
         mList.add(new MainBean("BitmapDrawable", BitmapDrawableActivity.class));
         mList.add(new MainBean("NinePatchDrawable", NinePatchDrawableActivity.class));
         mList.add(new MainBean("ShapeDrawable", ShapeDrawableActivity.class));
-        mList.add(new MainBean("BitmapDrawable", BitmapDrawableActivity.class));
-        mList.add(new MainBean("BitmapDrawable", BitmapDrawableActivity.class));
+        mList.add(new MainBean("LayerDrawable", LayerDrawableActivity.class));
+        mList.add(new MainBean("StateListDrawable", StateListDrawableActivity.class));
+        mList.add(new MainBean("LevelListDrawable", LevelListDrawableActivity.class));
+        mList.add(new MainBean("TransitionDrawable", TransitionDrawableActivity.class));
+        mList.add(new MainBean("InsetDrawable", InsetDrawableActivity.class));
+        mList.add(new MainBean("ScaleDrawable", ScaleDrawableActivity.class));
+        mList.add(new MainBean("ClipDrawable", ClipDrawableActivity.class));
     }
 
     @NonNull

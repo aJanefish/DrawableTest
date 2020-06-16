@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:constantSize="false">
+    <item android:drawable="@drawable/shape_rectangle_corners" android:state_pressed="true" />
+    <item android:drawable="@drawable/shape_rectangle_stroke" android:state_focused="true" />
+    <item android:drawable="@drawable/shape_rectangle_stroke" android:state_selected="true" />
+    <item android:drawable="@drawable/shape_rectangle_stroke" android:state_checked="true" />
+    <item android:drawable="@drawable/shape_rectangle_stroke" android:state_enabled="true" />
+    <item android:drawable="@drawable/shape_rectangle_corners_diff_1" />
+    <!-- constantSize StateListDrawable的固有大小是否不随着其状态的改变而改变   -->
+    <!--state_pressed-->
+    <!--state_focused-->
+    <!--state_selected-->
+    <!--state_checked-->
+    <!--state_enabled-->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+</selector>

@@ -5,7 +5,10 @@
     <solid android:color="@color/colorAccent" />
     <!--  圆角-->
     <corners android:radius="10dp" />
-
+    <size
+        android:width="100dp"
+        android:height="100dp"
+        />
     <!--    <stroke-->
     <!--        android:width="2dp"-->
     <!--        android:color="@color/colorPrimary"-->
