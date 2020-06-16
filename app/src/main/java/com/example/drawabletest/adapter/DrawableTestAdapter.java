@@ -1,5 +1,6 @@
 package com.example.drawabletest.adapter;
 
+import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ScaleDrawable;
 import android.graphics.drawable.TransitionDrawable;
@@ -74,6 +75,13 @@ public class DrawableTestAdapter extends RecyclerView.Adapter<DrawableTestAdapte
                     imageView1.setImageDrawable(drawable);
                 }
                 ((ScaleDrawable) drawable).setLevel(1);
+            } else if (drawable instanceof ClipDrawable) {
+                if (bean.type == 0) {
+                    imageView1.setBackground(drawable);
+                } else if (bean.type == 1) {
+                    imageView1.setImageDrawable(drawable);
+                }
+                ((ClipDrawable) drawable).setLevel(bean.level);
             } else {
                 if (bean.type == 0) {
                     drawable.setLevel(bean.level);

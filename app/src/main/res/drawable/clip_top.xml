@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipOrientation="vertical"
+    android:drawable="@drawable/ycy1"
+    android:gravity="top">
+    <!--clipOrientation 方向 水平和竖直   -->
+    <!--gravity  |组合使用  -->
+</clip>
