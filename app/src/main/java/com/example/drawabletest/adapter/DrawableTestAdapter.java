@@ -91,7 +91,9 @@ public class DrawableTestAdapter extends RecyclerView.Adapter<DrawableTestAdapte
                     imageView1.setImageLevel(bean.level);
                 }
             }
-            textView1.setText(drawable.getClass().getSimpleName() + "\n" + bean.des +
+            textView1.setText(drawable.getClass().getSimpleName() +
+                    "\n" + bean.des +
+                    "\n" + (bean.type == 0 ? "setBackground" : "setImageDrawable") +
                     "\n[" + imageView1.getWidth() + "," + imageView1.getHeight() + "]" +
                     "\n[" + drawable.getIntrinsicWidth() + "," + drawable.getIntrinsicHeight() + "]" +
                     "");
