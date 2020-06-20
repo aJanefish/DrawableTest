@@ -55,6 +55,8 @@ public class ShapeDrawableActivity extends AppCompatActivity {
 
         mList.add(new DrawableTestAdapter.Bean("椭圆(oval)", R.drawable.shape_oval_common));
         mList.add(new DrawableTestAdapter.Bean("椭圆(oval)", R.drawable.shape_oval_common, 1));
+        mList.add(new DrawableTestAdapter.Bean("shape_oval_size", R.drawable.shape_oval_size, 0));
+        mList.add(new DrawableTestAdapter.Bean("shape_oval_size", R.drawable.shape_oval_size, 1));
         mList.add(new DrawableTestAdapter.Bean("椭圆 - 圆环", R.drawable.shape_oval_ring));
         mList.add(new DrawableTestAdapter.Bean("椭圆 - 圆环", R.drawable.shape_oval_ring, 1));
         mList.add(new DrawableTestAdapter.Bean("椭圆 - 园", R.drawable.shape_oval_ring));

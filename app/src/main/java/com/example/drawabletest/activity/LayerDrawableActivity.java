@@ -41,10 +41,16 @@ public class LayerDrawableActivity extends AppCompatActivity {
         mList.add(new DrawableTestAdapter.Bean("size", R.drawable.layer_list_common_size));
         mList.add(new DrawableTestAdapter.Bean("size", R.drawable.layer_list_common_size,1));
 
+        mList.add(new DrawableTestAdapter.Bean("layer_list_rotate", R.drawable.layer_list_rotate,0));
+        mList.add(new DrawableTestAdapter.Bean("layer_list_rotate", R.drawable.layer_list_rotate,1));
+
+        mList.add(new DrawableTestAdapter.Bean("阴影", R.drawable.layer_list_shadow,0));
+        mList.add(new DrawableTestAdapter.Bean("阴影", R.drawable.layer_list_shadow,1));
+
         mList.add(new DrawableTestAdapter.Bean("输入框背景", R.drawable.layer_list_text_background));
         mList.add(new DrawableTestAdapter.Bean("输入框背景", R.drawable.layer_list_text_background,1));
-        mList.add(new DrawableTestAdapter.Bean("输入框背景", R.drawable.ycy));
-        mList.add(new DrawableTestAdapter.Bean("输入框背景", R.drawable.ycy,1));
+        mList.add(new DrawableTestAdapter.Bean("ycy", R.drawable.ycy));
+        mList.add(new DrawableTestAdapter.Bean("ycy", R.drawable.ycy,1));
 
     }
 }

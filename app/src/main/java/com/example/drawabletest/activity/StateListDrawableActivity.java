@@ -47,6 +47,9 @@ public class StateListDrawableActivity extends AppCompatActivity {
         mList.add(new DrawableTestAdapter.Bean("selector_constant_size_false", R.drawable.selector_constant_size_false));
         mList.add(new DrawableTestAdapter.Bean("selector_constant_size_false", R.drawable.selector_constant_size_false, 1));
 
+        mList.add(new DrawableTestAdapter.Bean("selector_button_background", R.drawable.selector_button_background, 1));
+        mList.add(new DrawableTestAdapter.Bean("selector_button_background", R.drawable.selector_button_background, 1));
+
         mList.add(new DrawableTestAdapter.Bean("test", R.drawable.ycy9));
         mList.add(new DrawableTestAdapter.Bean("test", R.drawable.ycy9, 1));
     }

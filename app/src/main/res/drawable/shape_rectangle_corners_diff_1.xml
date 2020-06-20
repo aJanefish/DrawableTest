@@ -10,8 +10,7 @@
         android:topLeftRadius="30dp" />
     <size
         android:width="200dp"
-        android:height="100dp"
-        />
+        android:height="100dp" />
 
     <!--    <stroke-->
     <!--        android:width="2dp"-->

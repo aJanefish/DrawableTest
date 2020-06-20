@@ -12,10 +12,10 @@
     <!--  endColor  渐变中心竖坐标-->
 
     <gradient
-        android:startColor="@color/white"
         android:endColor="@color/black"
+        android:startColor="@color/white"
         android:type="linear"
-        android:useLevel="false"/>
+        android:useLevel="false" />
 
     <!--    <stroke-->
     <!--        android:width="2dp"-->
